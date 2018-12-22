@@ -1,0 +1,25 @@
+<header>
+    <div class="slider"><h1>HEADER__SLIDE</h1></div>
+
+    <nav class="navbar" id="navbar">
+        <a class="navbar__brand" id="navbar__brand" href="/">DEVFUN</a>
+        <button class="navbar__toggle" id="navbar__toggle">
+            <p class="icon"></p>
+            <p class="icon"></p>
+        </button>
+        <ul class="navbar__nav" id="navbar__nav">
+            <li class="nav__item"><a href="">HOME</a></li>
+            <li  class="nav__item"><a href="">ABOUT</a></li>
+            <li  class="nav__item"><a href="">BLOG</a></li>
+            <li class="nav__item"><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    document.getElementById("navbar__toggle").addEventListener("click", () => {
+            document.getElementsByClassName("icon")[0].classList.toggle("show-icon-close-1");
+            document.getElementsByClassName("icon")[1].classList.toggle("show-icon-close-2");
+            document.getElementById("navbar__nav").classList.toggle("show");
+            document.getElementById("navbar").classList.toggle("navbar--open");
+        });
+</script>

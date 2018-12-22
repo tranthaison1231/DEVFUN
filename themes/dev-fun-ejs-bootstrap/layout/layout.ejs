@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<%- partial('partial/head')%>
+<body>
+    <%- partial('partial/header')%>
+    <main>
+        <aside class="aside__left">ASIDE 1</aside>
+        <div class="container"><%- body %></div>
+        <aside class="aside_right">ASID 2</aside>
+    </main>
+    <%- partial('partial/footer', {title: 'Footer'}) %>
+</body>
+</html>

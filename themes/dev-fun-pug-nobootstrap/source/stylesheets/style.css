@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+header .slider {
+  display: none; }
+header .navbar {
+  display: flex;
+  background: gray; }
+  header .navbar .navbar__brand {
+    text-decoration: none;
+    color: black;
+    display: block; }
+  header .navbar .navbar__search {
+    display: none; }
+  header .navbar .navbar__nav {
+    display: none; }
+header .nav {
+  display: none; }
+
+main aside {
+  display: none; }
+
+@media only screen and (min-width: 768px) {
+  header .slider {
+    display: block;
+    background-color: red; }
+  header .navbar .navbar__nav {
+    display: flex;
+    color: white;
+    list-style: none;
+    width: 75%; }
+    header .navbar .navbar__nav .nav__item a {
+      text-decoration: none; }
+
+  main {
+    display: flex;
+    flex-direction: row; }
+    main .aside__left {
+      display: block;
+      background: red; } }
+@media only screen and (min-width: 900px) {
+  main .aside__left {
+    flex: 1; }
+  main .container {
+    flex: 1; }
+  main .aside_right {
+    display: block;
+    background: red;
+    flex: 1; } }
+
+/*# sourceMappingURL=style.css.map */

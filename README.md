@@ -1,3 +1,3 @@
 # DEVFUN
 
-GIT CLONE -> npm install -> hexo generate 
+GIT CLONE -> npm install -> create folder PUBLIC -> hexo generate 
